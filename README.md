@@ -253,10 +253,7 @@ Internet Gateway
 
 ```bash
 # 🚀 Initialize Terraform for all modules at once
-for i in 01-vpc/ 02-firewall/ 03-vpn/ 04-mongodb/ 05-app-alb/ 06-catalogue/ 07-web-alb/ 08-web-server/ 09-redis/ 10-user/ 11-cart/ 12-mysql/ 13-shipping/ 14-RabbitMQ/ 15-payment/ ; do 
-  echo "🔧 Initializing $i..."
-  cd $i && terraform init && cd ..
-done
+for i in 01-vpc/ 02-firewall/ 03-vpn/ 04-mongodb/ 05-app-alb/ 06-catalogue/ 07-web-alb/ 08-web-server/ 09-redis/ 10-user/ 11-cart/ 12-mysql/ 13-shipping/ 14-RabbitMQ/ 15-payment/ ; do cd $i ; terraform init ; cd .. ; done
 ```
 
 </details>
@@ -266,10 +263,7 @@ done
 
 ```bash
 # 📋 Plan deployment for all modules
-for i in 01-vpc/ 02-firewall/ 03-vpn/ 04-mongodb/ 05-app-alb/ 06-catalogue/ 07-web-alb/ 08-web-server/ 09-redis/ 10-user/ 11-cart/ 12-mysql/ 13-shipping/ 14-RabbitMQ/ 15-payment/ ; do 
-  echo "📋 Planning $i..."
-  cd $i && terraform plan && cd ..
-done
+for i in 01-vpc/ 02-firewall/ 03-vpn/ 04-mongodb/ 05-app-alb/ 06-catalogue/ 07-web-alb/ 08-web-server/ 09-redis/ 10-user/ 11-cart/ 12-mysql/ 13-shipping/ 14-RabbitMQ/ 15-payment/ ; do cd $i ; terraform plan ; cd .. ; done    
 ```
 
 </details>
@@ -279,10 +273,7 @@ done
 
 ```bash
 # ⚠️  WARNING: Use with caution in production!
-for i in 01-vpc/ 02-firewall/ 03-vpn/ 04-mongodb/ 05-app-alb/ 06-catalogue/ 07-web-alb/ 08-web-server/ 09-redis/ 10-user/ 11-cart/ 12-mysql/ 13-shipping/ 14-RabbitMQ/ 15-payment/ ; do 
-  echo "🚀 Deploying $i..."
-  cd $i && terraform apply -auto-approve && cd ..
-done
+for i in 01-vpc/ 02-firewall/ 03-vpn/ 04-mongodb/ 05-app-alb/ 06-catalogue/ 07-web-alb/ 08-web-server/ 09-redis/ 10-user/ 11-cart/ 12-mysql/ 13-shipping/ 14-RabbitMQ/ 15-payment/ ; do cd $i ; terraform apply -auto-approve ; cd .. ; done
 ```
 
 </details>
